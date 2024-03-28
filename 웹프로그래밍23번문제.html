@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8" />
+<head>
+    <style>
+    tr#first {background-color: rgb(43, 40, 40); color: aliceblue;}
+    #menu {width: 800px; background-color: darkgray; word-spacing: 2em; text-indent: 2em}
+    #art1 {background-color: rgb(173, 173, 173);}
+    #art2 {background-color: rgb(173, 173, 173);}
+    #footer {background-color: rgb(42, 42, 42); color: aliceblue;}
+    #aside {background-color: rgb(42, 42, 42); color: aliceblue;}
+    table {text-align: left; width: 1000px; height: 100px; table-layout: fixed; border-collapse: collapse;}
+    </style>
+</head>
+<body>
+    <table border="1" id="books">
+        <tr id="first">
+            <th colspan="8"><h2>header</h2>
+                <p>header의 두번째 제목입니다.</p>
+            </th>
+        </tr>
+        <tr id="menu">
+            <td>&nbsp;</td><td>메뉴1</td><td>메뉴2</td><td>메뉴3</td><td>메뉴4</td><td>메뉴5</td><td colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+            <th colspan="5">&nbsp;</th>
+            <th id="aside" colspan="3" rowspan="4">
+                <h2>aside</h2>
+                <p>aside의 본문입니다.</p>
+            </th>
+        </tr>
+        <tr>
+            <th id="art1" colspan="5">
+                <h2 text-indent:2em>article 1</h2>
+                <p>article 1의 본문입니다.</p>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="5">
+                <hr>
+            </th>
+        </tr>
+        <tr>
+            <th id="art2" colspan="5">
+                <h2>article 2</h2>
+                <p>article 2의 본문입니다.</p>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="5">&nbsp;</th>
+            <th colspan="3">&nbsp;</th>
+        </tr>
+        <tr>
+            <td id="footer" colspan="8">footer</td>
+        </tr>
+    </table>
+</body>
+</html>
