@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0"/>
+        <title>반응형웹 연습문재</title>
+        <style>
+            .divgroup{margin-bottom: 3px ;}
+            @media  (max-width: 600px) {
+                .divgroup{background-color: white;} div  
+                    {width:calc(100% - 3px);
+                }
+            }
+            @media (min-width: 600px) and (max-width: 1000px) {
+    .divgroup {
+        background-color: blue;
+        width: calc(50% - 3px);
+    }
+}
+             @media only screen and (min-width: 1000px) {
+                .divgroup {background-color: yellow;} div {
+                         width: calc(33.33% - 3px);
+    }
+}
+        </style>
+    </head>
+    <body>
+        <div class="divgroup">
+            <div>1번 영역</div>
+        <div>2번 영역</div>
+        <div>3번 영역</div>
+        <div>4번 영역</div>
+        <div>5번 영역</div>
+    </body>
+</html>
